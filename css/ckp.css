@@ -33,56 +33,14 @@
     }
 }
 
+/* ************************ General Default Style ********************** */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
-
-
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #0d98ba;
-    font-family: general, 'Times New Roman', Times, serif;
-}
-
-header {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0d98ba;
-    height: 85px;
-    width: 100vw;
-    z-index: 2;
-    box-shadow: 5px 5px 8px  #083d4b;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    background-color: #dfeff0;
-    top: 85px;
-    min-height: 89vh;
-    width: 100vw;
-    flex-grow: 1;
-}
-
-footer {
-    background-color: #0d98ba;
-    height: 3vh;
-    width: 100vw;
-    bottom: 0;
-    flex-grow: 0;
-}
-
+/* ********************************************************************* */
+/* ****************** Loading Animation Syling ************************* */
 .loading {
     position: fixed;
     top: 0;
@@ -123,7 +81,53 @@ footer {
     position: fixed;
     height: 9vh;
 }
+/* *************************************************************************** */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0d98ba;
+    font-family: general, 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
 
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d98ba;
+    height: 85px;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 5px 8px  #083d4b;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #dfeff0;
+    top: 85px;
+    min-height: 89vh;
+    width: 100vw;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #0d98ba;
+    height: 3vh;
+    width: 100vw;
+    bottom: 0;
+    flex-grow: 0;
+}
+
+
+/* ********************************* Navigation Bar Styling ******************************* */
 .navbar {
     width: 100vw;
     display: flex;
@@ -164,33 +168,6 @@ footer {
     background-color: #035569;
 }
 
-#photowall {
-    position: relative;
-    background: rgb(245,148,68);
-    background: linear-gradient(90deg, rgba(245,148,68,1) 0%, rgba(247,173,113,1) 75%);
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow-y: hidden;
-    height: 500px;
-    width: 100vw;
-}
-
-#photowall > img {
-    height: 250px;
-    width: auto;
-    object-fit: cover;
-}
-
-.photorow {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 250px;
-    animation: slideloop 20s infinite linear;
-
-}
 
 #logo {
     padding: 5px;
@@ -203,6 +180,40 @@ footer {
 #spacer {
     flex-grow: 1;
 }
+/* **************************************************************************************** */
+/* ********************************* Infinity Banner Styling ****************************** */
+#photowall {
+    position: relative;
+    background: rgb(245,148,68);
+    background: linear-gradient(90deg, rgba(245,148,68,1) 0%, rgba(247,173,113,1) 75%);
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: 500px;
+    width: 100vw;
+    margin-bottom: 10px;
+    /* border-top: rgba(3,85,105,1) solid 4px;
+    border-top: rgba(3,85,105,1) solid 4px; */
+}
+
+#photowall > .photorow > img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    /* margin-right: 4px; */
+    overflow: none;
+}
+
+.photorow {
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 250px;
+    /* animation: slideloop 20s infinite linear; */
+
+}
 
 #opacWall {
     position: absolute;
@@ -214,6 +225,23 @@ footer {
     background: rgb(245,148,68);
     background: linear-gradient(90deg, rgba(245,148,68,1) 0%, rgba(247,173,113,1) 75%);
     opacity: 0.5;
+}
+
+#top {
+    /* margin-bottom: 2px; */
+    animation: infinityBannerTop 15s infinite linear;
+}
+#bottom {
+    /* margin-top: 2px; */
+    animation: infinityBannerBot 15s infinite linear;
+}
+/* ******************************************************************************************* */
+#homeInfo {
+    width: 60vw;
+    height: auto;
+}
+#homeInfo > p{
+    margin-bottom: 10px;
 }
 
 h1, h2, h3 {
