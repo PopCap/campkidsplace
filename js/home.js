@@ -7,14 +7,14 @@ var bannerLengthBot = 0;
 for(let i=0; i < (imagesTop.length/2); i++) {
     if (imagesTop[i].nodeName.toLowerCase() == 'img') {
         console.log(imagesTop[i].src + ' ' + imagesTop[i].clientWidth);
-        bannerLengthTop -= (imagesTop[i].clientWidth - 4);
+        bannerLengthTop -= (imagesTop[i].clientWidth);
     }
 }
 
 for(let i=0; i < (imagesBot.length/2); i++) {
     if (imagesBot[i].nodeName.toLowerCase() == 'img') {
         console.log(imagesBot[i].clientWidth);
-        bannerLengthBot -= (imagesTop[i].clientWidth - 4);
+        bannerLengthBot -= (imagesBot[i].clientWidth);
     }
 }
 
