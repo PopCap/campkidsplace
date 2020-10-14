@@ -330,11 +330,102 @@ nav > ul {
 #bannerText > p > a:hover{
     background-color:  rgb(99, 173, 157);
 }
+/* ***************************************************************************************** */
+/* ****************************** About Page Styling *************************************** */
+#aboutInfo {
+    width: 60vw;
+    height: auto;
+}
+#aboutInfo > p{
+    margin-bottom: 10px;
+}
 
 
 h1, h2, h3 {
     font-family: headers, 'Times New Roman', Times, serif;
 }
+/* **************************************************************************************** */
+/* ****************************** Week Page Styling *************************************** */
+#aboutInfo {
+    width: 60vw;
+    height: auto;
+}
+#aboutInfo > p{
+    margin-bottom: 10px;
+}
+
+
+h1, h2, h3 {
+    font-family: headers, 'Times New Roman', Times, serif;
+}
+/* **************************************************************************************** */
+/* ****************************** Day Page Styling **************************************** */
+#aboutInfo {
+    width: 60vw;
+    height: auto;
+}
+#aboutInfo > p{
+    margin-bottom: 10px;
+}
+
+
+h1, h2, h3 {
+    font-family: headers, 'Times New Roman', Times, serif;
+}
+/* **************************************************************************************** */
+/* ****************************** Hour Page Styling *************************************** */
+#aboutInfo {
+    width: 60vw;
+    height: auto;
+}
+#aboutInfo > p{
+    margin-bottom: 10px;
+}
+/* ********************************************************************************************** */
+/* ****************************** Early/Late Page Styling *************************************** */
+#aboutInfo {
+    width: 60vw;
+    height: auto;
+}
+#aboutInfo > p{
+    margin-bottom: 10px;
+}
+/* ******************************************************************************************** */
+/* ****************************** Register Page Styling *************************************** */
+#aboutInfo {
+    width: 60vw;
+    height: auto;
+}
+#aboutInfo > p{
+    margin-bottom: 10px;
+}
+/* ***************************************************************************************** */
+/* ****************************** Staff Page Styling *************************************** */
+#aboutInfo {
+    width: 60vw;
+    height: auto;
+}
+#aboutInfo > p{
+    margin-bottom: 10px;
+}
+
+
+h1, h2, h3 {
+    font-family: headers, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+    font-family: headers, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+    font-family: headers, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+    font-family: headers, 'Times New Roman', Times, serif;
+}
+/* **************************************************************************************** */
 /* ****************************************** MOBILE DISPLAY ********************************* */
 @media (max-width: 900px) {
 
