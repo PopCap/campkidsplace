@@ -30,7 +30,7 @@
     padding: 0;
 }
 /* ********************************************************************* */
-/* ****************** Loading Animation Syling ************************* */
+/* ****************** Loading Animation Styling ************************* */
 .loading {
     position: fixed;
     top: 0;
@@ -94,6 +94,7 @@ header {
     width: 100vw;
     top: 0;
     z-index: 4;
+    border-bottom: solid 2px #063541;
 }
 
 main {
@@ -133,12 +134,13 @@ footer > div > a {
 #adminAccess {
     height: 28px;
     width: auto;
-    padding-top: 8px;
+    padding-top: 10px;
 }
 
 
 /* ********************************* Navigation Bar Styling ******************************* */
 .navbar {
+    position: relative;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -148,6 +150,16 @@ footer > div > a {
     background: rgb(13,152,186);
     background: linear-gradient(90deg, rgba(13,152,186,1) 0%, rgba(3,85,105,1) 75%);
     flex-grow: 0.15;
+    border-bottom: solid rgb(3, 62, 77) 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #navlink {
@@ -163,21 +175,41 @@ footer > div > a {
     align-items:center;
     text-align: center;
 }
-.navbar > #navlink:not(:first-of-type){
-    border-left: 1px solid white;
-}
 
 #navlink:hover {
-    background-color: #42d2f5;
+    background-color: #319bb6;
 }
 
-#logo {
+#navlink:active {
+    background-color: darkorange;
+}
+
+.logo {
     padding: 5px;
     max-height: 78px;
     width: auto;
     display: inline-block;
     object-fit: cover;
 }
+
+#mini {
+    display: none;
+}
+
+#menu-button {
+    display: none;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+#menu-button:active {
+    background-color: darkorange;
+    opacity: 0.5;
+}
+
+
 
 #spacer {
     flex-grow: 1;
@@ -243,13 +275,18 @@ footer > div > a {
     text-shadow: 2px 2px rgb(240, 136, 1);
 }
 
+#wallCaption > h1{
+    margin-right: 15px;
+}
+
 #top {
     animation: infinityBannerTop 28s infinite linear;
 }
 #bottom {
     animation: infinityBannerBot 28s infinite linear;
 }
-/* ******************************************************************************************* */
+/* **************************************************************************************** */
+/* ********************************* Home Page Styling ****************************** */
 #homeInfo {
     width: 60vw;
     height: auto;
@@ -258,6 +295,145 @@ footer > div > a {
     margin-bottom: 10px;
 }
 
+#banner {
+    max-width: 80vw;
+    background-color: white;
+    height: auto;
+    padding: 4px;
+    border: #035569 solid 2px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+#bannerText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(42, 156, 132);
+    color: white;
+    font-family: general;
+    padding: 8px;
+    font-size: 100%;
+    border-radius: 10px;
+}
+
+#bannerText > p > a {
+    border: solid 3px  rgb(29, 110, 93);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+#bannerText > p > a:hover{
+    background-color:  rgb(99, 173, 157);
+}
+
+
 h1, h2, h3 {
     font-family: headers, 'Times New Roman', Times, serif;
+}
+/* ****************************************** MOBILE DISPLAY ********************************* */
+@media (max-width: 900px) {
+
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav {
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 85px;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    .navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #navlink {
+        height: 35px;
+        width: 150px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #035569;
+        background: linear-gradient(90deg, rgb(8, 90, 110) 0%, rgba(3,85,105,1) 30%);
+        border: solid #063541 2px;
+    }
+
+    #navlink > p {
+        margin-right: 4px;
+    }
+                                            
+    #menu-button {
+        display: block;
+        margin: 0;
+    }
+
+    #homeInfo {
+        max-width: 80vw;
+    }
+
+    #bannerText {
+        font-size: 75%;
+    }
+
+    #wallCaption {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #wallCaption > h1{
+        margin: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #mini {
+        display: block;
+        max-height: 65px;
+    }
+
+    #main {
+        display: none;
+    }
+    
+    #menu-button {
+        height: 60px;
+    }
+
+    nav {
+        top: 70px;
+    }
+    #banner {
+        max-width: 90vw;
+    }
+
+    #bannerText {
+        font-size: 60%;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    .navbar {
+        height: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #photowall {
+        border-top: none;
+    }
 }

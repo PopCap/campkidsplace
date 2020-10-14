@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CKP Home</title>
     <link rel="stylesheet" href="css/ckp.css">
+    <script defer src="js/loading.js"></script>
+    <script defer src="js/home.js"></script>
+    <script defer src="js/navlinks.js"></script>
 </head>
 <body>
     <div class="loading" id="homeload">
@@ -16,21 +19,29 @@
     <header>
         <div class="navbar">
             <a href="index.html">
-                <img id="logo" src="images/camp kids place 2019 logo-u3749.png" alt="camp logo">
+                <img class="logo" id="mini" src="images/logosmall.png" alt="camp logo">
+            </a>
+            <a href="index.html">
+                <img class="logo" id="main" src="images/ckplogo.png" alt="camp logo">
             </a>
             <div id="spacer"></div>
-            <a href="about.html" id="navlink">About</a>
-            <a href="week.html" id="navlink">Week<br>by<br>Week</a>
-            <a href="day.html" id="navlink">Day<br>by<br>Day</a>
-            <a href="hour.html" id="navlink">Hour<br>by<br>Hour</a>
-            <a href="earlyLate.html" id="navlink">Early<br>or<br>Late</a>
-            <a href="register.html" id="navlink">Register</a>
-            <a href="staff.html" id="navlink">Staff</a>
+            <img id="menu-button" src="images/menu-symbol-of-three-parallel-lines.svg" alt="menu symbol">
+            <nav id="navigation">
+                <ul>
+                    <li><a href="about.html" id="navlink"><p>About</p></a></li>
+                    <li><a href="week.html" id="navlink"><p>Week</p><p>by</p><p>Week</p></a></li>
+                    <li><a href="day.html" id="navlink"><p>Day</p><p>by</p><p>Day</p></a></li>
+                    <li><a href="hour.html" id="navlink"><p>Hour</p><p>by</p><p>Hour</p></a></li>
+                    <li><a href="earlyLate.html" id="navlink"><p>Early</p><p>or</p><p>Late</p></a></li>
+                    <li><a href="register.html" id="navlink"><p>Register</p></a></li>
+                    <li><a href="staff.html" id="navlink"><p>Staff</p></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
         <div id="photowall">
-            <div id="wallCaption"><h1>An Unforgetable Summer</h1></div>
+            <div id="wallCaption"><h1>Summer</h1><h1>Starts</h1><h1>Here</h1></div>
             <div id="opacWall"></div>
             <div class="photorow" id="top">
                 <img src="images/12.jpg" alt="camper playing dodgeball">
@@ -74,7 +85,12 @@
             </div>
         </div>
         <div id="banner">
-            <img src="images/website banner-u6341.png" alt="info banner">
+            <div id="bannerText">
+                <p>ARLINGTON'S FUN SUMMER DAY CAMP FOR KIDS ENTERING KINDERGARTEN THROUGH GRADE 7 IN THE FALL</p>
+                <p>PRESENTED BY <a href="https://www.cherrydale.org/" target="_blank">CHERRYDALE BAPTIST CHURCH:</a></p>
+                <p>~ 3910 LORCOM LANE ~ ARLINGTON, VA 22207</p>
+                <p>(703) 389-4012</p>
+            </div>
         </div>
         <div id="homeInfo">
             <p>
@@ -112,8 +128,6 @@
                 we’ve planned. We’ll make sure your child has a safe and fun time each day at camp!
             </p>
         </div>
-
-
     </main>
     <footer>
         <div>
@@ -127,7 +141,5 @@
             <img src="images/2017-fr.wp-orange-lock.svg" id = "adminAccess">
         </div>
     </footer>
-    <script src="js/loading.js"></script>
-    <script src="js/home.js"></script>
 </body>
 </html>
