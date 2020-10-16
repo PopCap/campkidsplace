@@ -220,7 +220,7 @@ nav > ul {
 
 
 
-#spacer {
+.spacer {
     flex-grow: 1;
 }
 /* **************************************************************************************** */
@@ -437,6 +437,15 @@ h1, h2, h3, .inlineHeader {
 #dayInfo > p{
     margin-bottom: 10px;
 }
+
+#dayPage {
+    max-width: 75vw;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: rgb(214, 135, 31);
+    border-radius: 8px;
+    padding: 8px;
+}
 /* **************************************************************************************** */
 /* ****************************** Hour Page Styling *************************************** */
 #hourInfo {
@@ -474,6 +483,15 @@ h1, h2, h3, .inlineHeader {
     margin-bottom: 10px;
 }
 
+#ELPage {
+    max-width: 75vw;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: rgb(214, 135, 31);
+    border-radius: 8px;
+    padding: 8px;
+}
+
 /* ******************************************************************************************** */
 /* ****************************** Register Page Styling *************************************** */
 #registerInfo {
@@ -491,6 +509,14 @@ h1, h2, h3, .inlineHeader {
 }
 #staffInfo > p{
     margin-bottom: 10px;
+}
+#staffPage {
+    max-width: 75vw;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: rgb(214, 135, 31);
+    border-radius: 8px;
+    padding: 8px;
 }
 /* **************************************************************************************** */
 /* ****************************************** MOBILE DISPLAY ********************************* */
@@ -551,7 +577,7 @@ h1, h2, h3, .inlineHeader {
     }
 
     #wallCaption > h1{
-        margin: none;
+        margin: 0;
     }
 }
 
@@ -593,5 +619,9 @@ h1, h2, h3, .inlineHeader {
 
     #photowall {
         border-top: none;
+    }
+
+    #staffInfo, #aboutInfo, #weekInfo, #dayInfo, #hourInfo, #ELInfo {
+        width: 75vw;
     }
 }
