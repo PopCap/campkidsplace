@@ -137,6 +137,15 @@ footer > div > a {
     padding-top: 10px;
 }
 
+table {
+    border-spacing: 10px;
+    border-collapse: separate;
+    background-color: rgb(116, 161, 219);
+    border-radius: 10px;
+}
+td {
+    margin-right: 5px;
+}
 
 /* ********************************* Navigation Bar Styling ******************************* */
 .navbar {
@@ -162,7 +171,7 @@ nav > ul {
     justify-content: space-between;
 }
 
-#navlink {
+.navlink {
     height: 85px;
     display: flex;
     flex-direction: column;
@@ -176,11 +185,11 @@ nav > ul {
     text-align: center;
 }
 
-#navlink:hover {
+.navlink:hover {
     background-color: #319bb6;
 }
 
-#navlink:active {
+.navlink:active {
     background-color: darkorange;
 }
 
@@ -341,89 +350,147 @@ nav > ul {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, .inlineHeader {
     font-family: headers, 'Times New Roman', Times, serif;
+}
+
+.inlineHeader {
+    font-size: 130%;
 }
 /* **************************************************************************************** */
 /* ****************************** Week Page Styling *************************************** */
-#aboutInfo {
-    width: 60vw;
-    height: auto;
+.week {
+    max-width: 75vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 8px;
 }
-#aboutInfo > p{
+
+.week > p{
     margin-bottom: 10px;
 }
 
+.week > h3 {
+    margin-top: 10px;
+}
 
-h1, h2, h3 {
-    font-family: headers, 'Times New Roman', Times, serif;
+#weekInfo {
+    width: 60vw;
+    height: auto;
+}
+
+#olympic {
+    background-color: rgb(247, 247, 247);
+    border: darkgray solid 2px;
+}
+
+#carnival {
+    background-color: rgb(219, 98, 98);
+    border: rgb(179, 20, 20) solid 2px;
+}
+
+#rodeo {
+    background-color: rgb(187, 149, 99);
+    border: rgb(119, 92, 51) solid 2px;
+}
+
+#studio {
+    background-color: rgb(107, 107, 107);
+    border: rgb(80, 80, 80) solid 2px;
+}
+
+#holiday {
+    background-color: rgb(160, 116, 185);
+    border: rgb(107, 64, 112) solid 2px;
+}
+
+#civilizations {
+    background-color:  rgb(221, 223, 103);
+    border: rgb(155, 153, 66) solid 2px;
+}
+
+#super {
+    background-color:  rgb(115, 171, 218);
+    border: rgb(60, 90, 126) solid 2px;
+}
+
+#boot {
+    background-color:  rgb(100, 172, 112);
+    border: rgb(66, 119, 66) solid 2px;
+}
+
+#weekPage {
+    max-width: 75vw;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: rgb(214, 135, 31);
+    border-radius: 8px;
+    padding: 8px;
 }
 /* **************************************************************************************** */
 /* ****************************** Day Page Styling **************************************** */
-#aboutInfo {
+#dayInfo {
     width: 60vw;
     height: auto;
 }
-#aboutInfo > p{
+#dayInfo > p{
     margin-bottom: 10px;
-}
-
-
-h1, h2, h3 {
-    font-family: headers, 'Times New Roman', Times, serif;
 }
 /* **************************************************************************************** */
 /* ****************************** Hour Page Styling *************************************** */
-#aboutInfo {
+#hourInfo {
     width: 60vw;
     height: auto;
 }
-#aboutInfo > p{
+#hourInfo > p{
     margin-bottom: 10px;
+}
+
+#hourInfo > h3 {
+    margin-top: 10px;
+}
+
+#HourInfo > table {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#hourPage {
+    max-width: 75vw;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: rgb(214, 135, 31);
+    border-radius: 8px;
+    padding: 8px;
 }
 /* ********************************************************************************************** */
 /* ****************************** Early/Late Page Styling *************************************** */
-#aboutInfo {
+#ELInfo {
     width: 60vw;
     height: auto;
 }
-#aboutInfo > p{
+#ELInfo > p{
     margin-bottom: 10px;
 }
+
 /* ******************************************************************************************** */
 /* ****************************** Register Page Styling *************************************** */
-#aboutInfo {
+#registerInfo {
     width: 60vw;
     height: auto;
 }
-#aboutInfo > p{
+#registerInfo > p{
     margin-bottom: 10px;
 }
 /* ***************************************************************************************** */
 /* ****************************** Staff Page Styling *************************************** */
-#aboutInfo {
+#staffInfo {
     width: 60vw;
     height: auto;
 }
-#aboutInfo > p{
+#staffInfo > p{
     margin-bottom: 10px;
-}
-
-
-h1, h2, h3 {
-    font-family: headers, 'Times New Roman', Times, serif;
-}
-
-h1, h2, h3 {
-    font-family: headers, 'Times New Roman', Times, serif;
-}
-
-h1, h2, h3 {
-    font-family: headers, 'Times New Roman', Times, serif;
-}
-
-h1, h2, h3 {
-    font-family: headers, 'Times New Roman', Times, serif;
 }
 /* **************************************************************************************** */
 /* ****************************************** MOBILE DISPLAY ********************************* */
@@ -449,7 +516,7 @@ h1, h2, h3 {
         padding-right: 15px;
     }
 
-    #navlink {
+    .navlink {
         height: 35px;
         width: 150px;
         flex-direction: row;
@@ -460,7 +527,7 @@ h1, h2, h3 {
         border: solid #063541 2px;
     }
 
-    #navlink > p {
+    .navlink > p {
         margin-right: 4px;
     }
                                             
