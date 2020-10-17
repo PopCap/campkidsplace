@@ -103,7 +103,7 @@ main {
     align-items: center;
     position: relative;
     background-color: #dfeff0;
-    min-height: 89vh;
+    min-height: 70vh;
     width: 100vw;
     flex-grow: 1;
 }
@@ -494,12 +494,38 @@ h1, h2, h3, .inlineHeader {
 
 /* ******************************************************************************************** */
 /* ****************************** Register Page Styling *************************************** */
+#registerPage {
+    max-width: 75vw;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgb(23, 121, 167);
+    border-radius: 8px;
+    padding: 8px;
+}
 #registerInfo {
     width: 60vw;
     height: auto;
 }
-#registerInfo > p{
-    margin-bottom: 10px;
+form {
+    max-width: 75vw;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: rgb(113, 187, 221);
+    border-radius: 8px;
+    border: solid rgb(23, 121, 167) 2px;
+    padding: 8px;
+}
+#submit {
+    display: none;
+}
+
+#camperForm {
+    display: none;
+}
+
+.hideForm {
+    display:none;
 }
 /* ***************************************************************************************** */
 /* ****************************** Staff Page Styling *************************************** */
