@@ -516,12 +516,10 @@ form {
     border: solid rgb(23, 121, 167) 2px;
     padding: 8px;
 }
-#submit {
-    display: none;
-}
 
 .camperForm {
-    display: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .hideForm {
